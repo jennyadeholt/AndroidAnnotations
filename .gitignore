@@ -1,6 +1,7 @@
 .idea/
 *.iml
 gen/
+generated/
 out/
 
 *.properties

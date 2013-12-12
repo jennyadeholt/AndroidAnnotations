@@ -1,17 +1,17 @@
 package com.jayway.AndroidAnnotations;
 
 import android.app.Activity;
-import android.os.Bundle;
-import com.googlecode.androidannotations.annotations.EActivity;
+import android.widget.Toast;
+import org.androidannotations.annotations.Click;
+import org.androidannotations.annotations.EActivity;
 
-@EActivity
+@EActivity(R.layout.main)
 public class MyActivity extends Activity {
-    /**
-     * Called when the activity is first created.
-     */
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+
+
+    @Click
+    void onButtonClicked(){
+        Toast.makeText(this, "Hello hey, what's your name?", Toast.LENGTH_LONG).show();
     }
+
 }

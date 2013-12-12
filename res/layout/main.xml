@@ -9,5 +9,11 @@
             android:layout_height="wrap_content"
             android:text="Woop woop"
             />
+
+    <Button
+            android:id="@+id/onButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@android:string/yes" />
 </LinearLayout>
 
